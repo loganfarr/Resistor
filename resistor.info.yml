@@ -1,0 +1,22 @@
+name: Resistor
+type: theme
+description: This is the Drupal 8 theme for LoganFarr.com
+core: 8.x
+#Defines a base theme
+base theme: omega
+
+#Defines libraries group in which we can add css/js
+#This will call the library globally instead of just whenever a page declares it
+libraries:
+	- resistor/global-styling
+
+#Regions
+regions:
+	navigation: Navigation
+	header: Header
+	content: Content
+	sidebar_first: Sidebar First
+	sidebar_second: Sidebar Second
+	secondary: Secondary
+	tertiary: Tertiary
+	footer: Footer
