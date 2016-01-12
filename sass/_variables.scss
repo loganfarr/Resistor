@@ -1,0 +1,116 @@
+//Doc this later
+
+//Colors
+$black:       #333;
+$smoke:       #ccc;
+
+$blue:        #29abe2;
+$darkBlue:    #0472A2;
+$lightBlue:   #7CCCEE;
+
+$green: 	  #21E972;
+$darkGreen:   #00B84A;
+$lightGreen:  #78F2A9;
+
+$purple:      #3A52E6;
+$darkPurple:  #0C23B0;
+$lightPurple: #5E71EB;
+
+$red:		  #FF2424;
+$darkRed:	  #FF0000;
+$lightRed:	  #FF4F4F;
+
+$yellow:	  #FFCC24;
+$darkYellow:  #FFC300;
+$lightYellow: #FFE17F;
+
+//Social Media Colors:
+$twitter:     #00aced;
+$googlePlus:  #dd4b39;
+$linkedIn:	  #007bb6;
+$tumblr:      #32506d;
+$drupal:	  #56b3e6;
+
+//Color Palette
+$main: $blue; //Backgrounds, anything branding-related, link colors
+$secondary: $green; //Buttons, hover, menu
+$tertiary: $purple; //Footer color, table colors
+$accent: $tertiary; //Bold, border, generally a darker color
+$action: $main; //CTAs and whatnot
+
+$light-gray: #e6e6e6;
+
+//Open Sans
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+$open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+//Raleway
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+$raleway: 'Raleway', Helvetica, Arial, sans-serif;
+
+//Font families
+$helvetica: Helvetica, Arial, sans-serif;
+$times: Times, serif;
+
+//Default font settings
+$font-color: #333;
+$font-family: $open-sans;
+
+$heading-color: $font-color;
+$heading-font: $font-family;
+
+//Breakpoints
+$desktop: 1000em;
+$tablet: 780em;
+$mobile: 500px;
+
+//Wrapper settings
+$header-wrapper: transparent; //Background color for .l-header-wrapper
+$navigation-wrapper: transparent; //Background color for .l-navigation-wrapper
+$main-wrapper: transparent; //Background color for .l-main-wrapper
+$sidebar-first-background: transparent; //Background color for .l-region--sidebar-first
+$sidebar-second-background: transparent; //Background color for .l-region--sidebar-second
+$footer-background: transparent; //Background color for .l-footer-wrapper
+
+$wrapper-padding: 20px 0;
+$wrapper-margin: 10px 0;
+
+//Link settings
+$link-color: $secondary;
+$link-hover-color: $action;
+
+//Button settings
+$button-background: $tertiary;
+$button-text: #fff;
+$button-padding: 15px 30px;
+$button-hover-background: $action;
+$button-hover-text: $button-text;
+
+//Menu settings
+$menu-text-color: #fff;
+$menu-text-hover-color: darken($menu-text-color, 10%);
+$menu-item-background: $secondary;
+$menu-item-hover-background: darken($menu-item-background, 20%);
+$menu-item-padding: $button-padding;
+$menu-background: $menu-item-background;
+
+//Table settings
+$table-row-border: 1px solid $tertiary;
+$table-heading-color: $tertiary;
+$table-heading-background: transparent;
+$table-even-row-background: #e5e5e5;
+$table-odd-row-background: transparent;
+
+//Misc. Global Settings 
+$global-border-color: $accent;
+$global-border-radius: 2px;
+
+//Messagebox Colors
+$status-bg: #dff0d8;
+$status-border: darken($status-bg, 20%);
+$info-bg: #d9edf7;
+$info-border: darken($info-bg, 20%);
+$warning-bg: #fcf8e3;
+$warning-border: darken($warning-bg, 20%);
+$error-bg: #f2dede;
+$error-border: darken($error-bg, 20%);

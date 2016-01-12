@@ -1,0 +1,102 @@
+.hero.blog {
+	background: url('../images/grass.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@include breakpoint($desktop) {
+		background-position: 0 -250px;
+	}
+
+	@include breakpoint($tablet) {
+
+	}
+}
+
+.hero.article {
+	background: url('../images/header-bg.png');
+}
+
+#recent-posts,
+#blog {
+	clear: both;
+	padding-top: 60px;
+	padding-bottom: 100px;
+
+
+	h3 {
+		text-align: center;
+	}
+
+	.post {
+		clear: both;
+		padding-top: 50px;
+		border-top: 1px solid $smoke;
+		margin-top: 50px;
+		position: relative;
+
+		.post-image {
+			@include center-element;
+			width: 200px;
+			margin-bottom: 50px;
+
+			@include breakpoint($mobile) {
+				float: left;
+				margin-left: 0px;
+				margin-right: 50px;	
+				margin-bottom: 0;
+			}
+
+			img {
+				@include circle;
+				border: 1px solid #ccc;
+				border-radius: 110px;
+				padding: 10px;
+			}
+		}
+
+		.post-title {
+			margin-bottom: 1em;
+		}
+
+		.post-date {
+			font-style: italic;
+		}
+
+		.post-body {}
+
+		.post-read-more,
+		.post-toggle {
+			cursor: pointer;
+			position: absolute;
+			bottom: 0;
+			right: 30px;
+		}
+
+		.see-all-posts {
+			width: 123px;
+			@include center-element;
+		}
+	}
+
+	#single-post {
+		div.article-image img {
+			@include circle;
+		}
+	}
+}
+
+.article-spotlight-image {
+	display: block;
+	width: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+
+	@include breakpoint($tablet) {
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 40px;
+		margin-left: 0;
+	}
+	
+}
