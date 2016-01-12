@@ -37,8 +37,8 @@ else
 end
 
 # Location of the theme's resources.
-css_dir = "css"
-sass_dir = "sass"
+css_dir = "styles/css"
+sass_dir = "styles/sass"
 images_dir = "images"
 generated_images_dir = images_dir + "/generated"
 

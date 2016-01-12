@@ -17,24 +17,34 @@
 	margin-left: auto;
 }
 
-@mixin button($color: $blue, $text: #fff, $secondaryColor: $darkBlue, $secondaryText: #fff) {
-	background-color: $color;
+@mixin button($background: $button-background, $background-hover: $button-hover-background, $text: #fff, $text-hover: $button-hover-text) {
+	background-color: $background;
 	color: $text;
-	padding: 10px 20px;
-	border-radius: 20px;
+	padding: $button-padding;
+	border-radius: $global-border-radius;
 	font-size: 15px;
 	display: inline-block;
 	margin: 10px;
 	cursor: pointer;
 
-	@include transition(background-color, 0.3s);
-	@include transition(border-radius, 0.3s);
+	@include transition;
 
 	&:hover {
-		background-color: $secondaryColor;
-		color: $secondaryText;
+		background-color: $background-hover;
+		color: $text-hover;
 		border-radius: 0;
 	}
+}
+
+@mixin clearfix {
+	clear: both;
+	overflow: auto;
+}
+
+@mixin circle($width: 200px) {
+	width: $width;
+	height: $width;
+	border-radius: $width / 2; 
 }
 
 @mixin hexagon-image($width: 200px, $height: $width*2) {
@@ -76,10 +86,4 @@
 		    }
 		}
 	}
-}
-
-@mixin circle($width: 200px) {
-	width: $width;
-	height: $width;
-	border-radius: $width / 2; 
 }
