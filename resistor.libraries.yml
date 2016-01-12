@@ -2,16 +2,16 @@
 # See reference: https://www.drupal.org/theme-guide/8/assets
 
 global-styling: 
-	version: 1.x
-	css:
-		theme:
-			css/style.css: {}
-			css/print.css: { media: print } #You can define the media property for any given CSS asset
-	js:
-		#header: true #JS files are now defaulted to loading in the footer. Loading in the header is opt-in
-		js/script.js: {}
-	dependencies: 
-		- core/jquery
+    version: 1.x
+    css:
+        theme:
+            styles/css/style.css: {}
+            styles/css/print.css: { media: print } #You can define the media property for any given CSS asset
+    js:
+        #header: true #JS files are now defaulted to loading in the footer. Loading in the header is opt-in
+        js/script.js: {}
+    dependencies: 
+        - core/jquery
 
 #To attach a library to a TWIG template:
 # {{ attach_library('fluffiness/cuddly-slider') }}
