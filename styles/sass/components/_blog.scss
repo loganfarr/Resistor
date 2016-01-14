@@ -1,14 +1,9 @@
-.hero.blog {
-	background: url('../images/grass.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+.path-blog header {
+	background: url('images/grass.jpg');
+	@include hero;
 
-	@include breakpoint($desktop) {
-		background-position: 0 -250px;
-	}
-
-	@include breakpoint($tablet) {
-
+	@include breakpoint($mobile) {
+		background-position: 0 -100px;
 	}
 }
 
@@ -16,25 +11,26 @@
 	background: url('../images/header-bg.png');
 }
 
-#recent-posts,
-#blog {
+.blog-view {
 	clear: both;
-	padding-top: 60px;
 	padding-bottom: 100px;
 
-
-	h3 {
-		text-align: center;
+	&.blog-block {
+		margin-top: -50px;
 	}
 
-	.post {
+	.views-row {
 		clear: both;
 		padding-top: 50px;
 		border-top: 1px solid $smoke;
 		margin-top: 50px;
 		position: relative;
 
-		.post-image {
+		&:first-child {
+			border-top: none;
+		}
+
+		.views-field-field-image {
 			@include center-element;
 			width: 200px;
 			margin-bottom: 50px;
@@ -54,28 +50,28 @@
 			}
 		}
 
-		.post-title {
+		.views-field-title {
 			margin-bottom: 1em;
 		}
 
-		.post-date {
+		.views-field-created {
 			font-style: italic;
 		}
 
 		.post-body {}
 
-		.post-read-more,
-		.post-toggle {
+		.views-field-view-node {
 			cursor: pointer;
 			position: absolute;
 			bottom: 0;
 			right: 30px;
 		}
+	}
 
-		.see-all-posts {
-			width: 123px;
-			@include center-element;
-		}
+	a.see-all-posts {
+		width: 123px;
+		@include button;
+		@include center-element;
 	}
 
 	#single-post {

@@ -1,26 +1,7 @@
-.l-header-wrapper,
-.l-navigation-wrapper,
-.l-main-wrapper {
-	padding: $wrapper-padding;
-	margin: $wrapper-margin;
-}
+#content-outer-wrapper .inner-wrapper {
+	padding: 20px;
 
-.l-header-wrapper {
-	background: $header-wrapper;
-}
-
-.l-navigation-wrapper {
-	background: $navigation-wrapper;
-}
-
-.l-main-wrapper {
-	background: $main-wrapper;
-}
-
-.l-region--sidebar-first {
-	background: $sidebar-first-background;
-}
-
-.l-region--sidebar-second {
-	background: $sidebar-second-background;
+	@include breakpoint($tablet) {
+		padding: 0;
+	}
 }

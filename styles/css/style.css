@@ -1395,31 +1395,12 @@ fieldset {
     margin-right: 0;
     clear: none; } }
 /* line 1, ../sass/base/_regions.scss */
-.l-header-wrapper,
-.l-navigation-wrapper,
-.l-main-wrapper {
-  padding: 20px 0;
-  margin: 10px 0; }
-
-/* line 8, ../sass/base/_regions.scss */
-.l-header-wrapper {
-  background: transparent; }
-
-/* line 12, ../sass/base/_regions.scss */
-.l-navigation-wrapper {
-  background: transparent; }
-
-/* line 16, ../sass/base/_regions.scss */
-.l-main-wrapper {
-  background: transparent; }
-
-/* line 20, ../sass/base/_regions.scss */
-.l-region--sidebar-first {
-  background: transparent; }
-
-/* line 24, ../sass/base/_regions.scss */
-.l-region--sidebar-second {
-  background: transparent; }
+#content-outer-wrapper .inner-wrapper {
+  padding: 20px; }
+  @media (min-width: 780em) {
+    /* line 1, ../sass/base/_regions.scss */
+    #content-outer-wrapper .inner-wrapper {
+      padding: 0; } }
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -3768,94 +3749,116 @@ fieldset {
       background-position: -610px 28px; } }
 
 /* line 1, ../sass/components/_blog.scss */
-.hero.blog {
-  background: url("../images/grass.jpg");
+.path-blog header {
+  background: url("images/grass.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat; }
-  @media (min-width: 1000em) {
+  color: #fff;
+  margin-bottom: 100px;
+  max-height: 700px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 130px 0px 200px 0px; }
+  @media (min-width: 780em) {
     /* line 1, ../sass/components/_blog.scss */
-    .hero.blog {
-      background-position: 0 -250px; } }
+    .path-blog header {
+      padding-top: 300px; } }
+  /* line 106, ../sass/_mixins.scss */
+  .path-blog header h1, .path-blog header h2, .path-blog header h3 {
+    color: #fff;
+    text-shadow: 1px 1px 6px #333;
+    text-align: center; }
+  @media (min-width: 500px) {
+    /* line 1, ../sass/components/_blog.scss */
+    .path-blog header {
+      background-position: 0 -100px; } }
 
-/* line 15, ../sass/components/_blog.scss */
+/* line 10, ../sass/components/_blog.scss */
 .hero.article {
   background: url("../images/header-bg.png"); }
 
-/* line 19, ../sass/components/_blog.scss */
-#recent-posts,
-#blog {
+/* line 14, ../sass/components/_blog.scss */
+.blog-view {
   clear: both;
-  padding-top: 60px;
   padding-bottom: 100px; }
-  /* line 26, ../sass/components/_blog.scss */
-  #recent-posts h3,
-  #blog h3 {
-    text-align: center; }
-  /* line 30, ../sass/components/_blog.scss */
-  #recent-posts .post,
-  #blog .post {
+  /* line 18, ../sass/components/_blog.scss */
+  .blog-view.blog-block {
+    margin-top: -50px; }
+  /* line 22, ../sass/components/_blog.scss */
+  .blog-view .views-row {
     clear: both;
     padding-top: 50px;
     border-top: 1px solid #ccc;
     margin-top: 50px;
     position: relative; }
-    /* line 37, ../sass/components/_blog.scss */
-    #recent-posts .post .post-image,
-    #blog .post .post-image {
+    /* line 29, ../sass/components/_blog.scss */
+    .blog-view .views-row:first-child {
+      border-top: none; }
+    /* line 33, ../sass/components/_blog.scss */
+    .blog-view .views-row .views-field-field-image {
       display: block;
       margin-right: auto;
       margin-left: auto;
       width: 200px;
       margin-bottom: 50px; }
       @media (min-width: 500px) {
-        /* line 37, ../sass/components/_blog.scss */
-        #recent-posts .post .post-image,
-        #blog .post .post-image {
+        /* line 33, ../sass/components/_blog.scss */
+        .blog-view .views-row .views-field-field-image {
           float: left;
           margin-left: 0px;
           margin-right: 50px;
           margin-bottom: 0; } }
-      /* line 49, ../sass/components/_blog.scss */
-      #recent-posts .post .post-image img,
-      #blog .post .post-image img {
+      /* line 45, ../sass/components/_blog.scss */
+      .blog-view .views-row .views-field-field-image img {
         width: 200px;
         height: 200px;
         border-radius: 100px;
         border: 1px solid #ccc;
         border-radius: 110px;
         padding: 10px; }
-    /* line 57, ../sass/components/_blog.scss */
-    #recent-posts .post .post-title,
-    #blog .post .post-title {
+    /* line 53, ../sass/components/_blog.scss */
+    .blog-view .views-row .views-field-title {
       margin-bottom: 1em; }
-    /* line 61, ../sass/components/_blog.scss */
-    #recent-posts .post .post-date,
-    #blog .post .post-date {
+    /* line 57, ../sass/components/_blog.scss */
+    .blog-view .views-row .views-field-created {
       font-style: italic; }
-    /* line 67, ../sass/components/_blog.scss */
-    #recent-posts .post .post-read-more,
-    #recent-posts .post .post-toggle,
-    #blog .post .post-read-more,
-    #blog .post .post-toggle {
+    /* line 63, ../sass/components/_blog.scss */
+    .blog-view .views-row .views-field-view-node {
       cursor: pointer;
       position: absolute;
       bottom: 0;
       right: 30px; }
-    /* line 75, ../sass/components/_blog.scss */
-    #recent-posts .post .see-all-posts,
-    #blog .post .see-all-posts {
-      width: 123px;
-      display: block;
-      margin-right: auto;
-      margin-left: auto; }
-  /* line 82, ../sass/components/_blog.scss */
-  #recent-posts #single-post div.article-image img,
-  #blog #single-post div.article-image img {
+  /* line 71, ../sass/components/_blog.scss */
+  .blog-view a.see-all-posts {
+    width: 123px;
+    background-color: #3A52E6;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+    /* line 32, ../sass/_mixins.scss */
+    .blog-view a.see-all-posts:hover {
+      background-color: #21E972;
+      color: #fff;
+      border-radius: 0; }
+  /* line 78, ../sass/components/_blog.scss */
+  .blog-view #single-post div.article-image img {
     width: 200px;
     height: 200px;
     border-radius: 100px; }
 
-/* line 88, ../sass/components/_blog.scss */
+/* line 84, ../sass/components/_blog.scss */
 .article-spotlight-image {
   display: block;
   width: 350px;
@@ -3863,7 +3866,7 @@ fieldset {
   margin-left: auto;
   margin-bottom: 50px; }
   @media (min-width: 780em) {
-    /* line 88, ../sass/components/_blog.scss */
+    /* line 84, ../sass/components/_blog.scss */
     .article-spotlight-image {
       float: left;
       margin-right: 40px;
@@ -3972,6 +3975,10 @@ header {
 .post-toggle {
   cursor: pointer; }
 
+/* line 9, ../sass/components/_home.scss */
+.views-element-container h2 {
+  text-align: center; }
+
 /* line 2, ../sass/components/_navigation.scss */
 #navigation-outer-wrapper {
   position: absolute;
@@ -3984,16 +3991,19 @@ header {
   /* line 11, ../sass/components/_navigation.scss */
   .region--navigation nav ul {
     padding-left: 0;
-    text-align: center; }
-    /* line 15, ../sass/components/_navigation.scss */
+    text-align: center;
+    margin: 0; }
+    /* line 16, ../sass/components/_navigation.scss */
     .region--navigation nav ul li {
       text-align: center;
-      list-style-type: none; }
+      list-style-type: none;
+      padding-top: 0; }
       @media (min-width: 500px) {
-        /* line 15, ../sass/components/_navigation.scss */
+        /* line 16, ../sass/components/_navigation.scss */
         .region--navigation nav ul li {
-          display: inline-block; } }
-      /* line 22, ../sass/components/_navigation.scss */
+          display: inline-block;
+          padding-top: 5px; } }
+      /* line 25, ../sass/components/_navigation.scss */
       .region--navigation nav ul li a {
         padding: 10px 30px;
         display: block;
@@ -4004,32 +4014,32 @@ header {
         color: #fff;
         border-bottom: 1px solid #fff;
         text-shadow: 1px 1px 2px #333; }
-        /* line 30, ../sass/components/_navigation.scss */
+        /* line 33, ../sass/components/_navigation.scss */
         .region--navigation nav ul li a:hover, .region--navigation nav ul li a:active {
           color: #29abe2;
           background: #fff;
           text-shadow: none; }
-        /* line 37, ../sass/components/_navigation.scss */
+        /* line 40, ../sass/components/_navigation.scss */
         .region--navigation nav ul li a.is-active {
           color: #fff; }
-          /* line 40, ../sass/components/_navigation.scss */
+          /* line 43, ../sass/components/_navigation.scss */
           .region--navigation nav ul li a.is-active:hover {
             color: #29abe2; }
 
-/* line 50, ../sass/components/_navigation.scss */
+/* line 53, ../sass/components/_navigation.scss */
 .region--footer nav ul {
   margin: 0; }
-  /* line 53, ../sass/components/_navigation.scss */
+  /* line 56, ../sass/components/_navigation.scss */
   .region--footer nav ul li {
     list-style-type: none; }
-    /* line 56, ../sass/components/_navigation.scss */
+    /* line 59, ../sass/components/_navigation.scss */
     .region--footer nav ul li:hover {
       background: transparent; }
-  /* line 61, ../sass/components/_navigation.scss */
+  /* line 64, ../sass/components/_navigation.scss */
   .region--footer nav ul li a {
     display: inline-block;
     padding: 15px 30px; }
-    /* line 65, ../sass/components/_navigation.scss */
+    /* line 68, ../sass/components/_navigation.scss */
     .region--footer nav ul li a:hover {
       color: #21E972; }
 
