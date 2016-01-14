@@ -88,6 +88,7 @@ img {
 a {
 	color: $link-color;
 	text-decoration: none;
+	@include transition(all, 0.2s);
 
 	&:hover {
 		color: $link-hover-color;

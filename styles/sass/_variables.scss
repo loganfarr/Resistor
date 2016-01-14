@@ -32,8 +32,8 @@ $tumblr:      #32506d;
 $drupal:	  #56b3e6;
 
 //Color Palette
-$main: $blue; //Backgrounds, anything branding-related, link colors
-$secondary: $green; //Buttons, hover, menu
+$main: $green; //Backgrounds, anything branding-related, link colors
+$secondary: $blue; //Buttons, hover, menu
 $tertiary: $purple; //Footer color, table colors
 $accent: $tertiary; //Bold, border, generally a darker color
 $action: $main; //CTAs and whatnot
@@ -70,7 +70,7 @@ $navigation-wrapper: transparent; //Background color for .l-navigation-wrapper
 $main-wrapper: transparent; //Background color for .l-main-wrapper
 $sidebar-first-background: transparent; //Background color for .l-region--sidebar-first
 $sidebar-second-background: transparent; //Background color for .l-region--sidebar-second
-$footer-background: transparent; //Background color for .l-footer-wrapper
+$footer-background: $black; //Background color for .l-footer-wrapper
 
 $wrapper-padding: 20px 0;
 $wrapper-margin: 10px 0;
@@ -88,9 +88,9 @@ $button-hover-text: $button-text;
 
 //Menu settings
 $menu-text-color: #fff;
-$menu-text-hover-color: darken($menu-text-color, 10%);
-$menu-item-background: $secondary;
-$menu-item-hover-background: darken($menu-item-background, 20%);
+$menu-text-hover-color: $secondary;
+$menu-item-background: transparent;
+$menu-item-hover-background: #fff;
 $menu-item-padding: $button-padding;
 $menu-background: $menu-item-background;
 

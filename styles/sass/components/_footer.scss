@@ -1,3 +1,15 @@
+#footer-outer-wrapper {
+	background: $footer-background;
+	color: #fff;
+}
+
+.region--footer {
+	h1,h2,h3,h4,h5,h6,
+	a {
+		color: #fff;
+	}
+}
+
 //see ../base/_hexagons.scss for class information
 .social-media-links {
 	float: right;
