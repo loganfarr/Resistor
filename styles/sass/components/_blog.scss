@@ -7,10 +7,6 @@
 	}
 }
 
-.hero.article {
-	background: url('../images/header-bg.png');
-}
-
 .blog-view {
 	clear: both;
 	padding-bottom: 100px;
@@ -25,6 +21,7 @@
 		border-top: 1px solid $smoke;
 		margin-top: 50px;
 		position: relative;
+		@include clearfix;
 
 		&:first-child {
 			border-top: none;
@@ -32,7 +29,7 @@
 
 		.views-field-field-image {
 			@include center-element;
-			width: 200px;
+			display: inline-block;
 			margin-bottom: 50px;
 
 			@include breakpoint($mobile) {
@@ -47,6 +44,18 @@
 				border: 1px solid #ccc;
 				border-radius: 110px;
 				padding: 10px;
+			}
+		}
+
+		.views-field-nothing {
+			display: inline-block;
+			width: 100%;
+			@include breakpoint($tablet) {
+				width: 75%;
+			}
+
+			p {
+				margin-left: 0;
 			}
 		}
 
@@ -68,10 +77,12 @@
 		}
 	}
 
+	.view-footer {
+		text-align: center;
+	}
+
 	a.see-all-posts {
-		width: 123px;
 		@include button;
-		@include center-element;
 	}
 
 	#single-post {

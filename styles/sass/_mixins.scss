@@ -27,7 +27,7 @@
 	margin: 10px;
 	cursor: pointer;
 
-	@include transition;
+	@include transition(all, 0.2s);
 
 	&:hover {
 		background-color: $background-hover;
@@ -92,16 +92,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:#fff;
-	margin-bottom: 100px;
-	max-height: 700px;
+	min-height: 500px;
 	@include box-sizing(border-box);
-	padding: 130px 0px 200px 0px;
 
 	@include breakpoint($tablet) {
-		padding-top: 300px 
+		padding-top: 200px;
 	}
-
-	
 
 	h1,h2,h3 {
 		color: #fff;
