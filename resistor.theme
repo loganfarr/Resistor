@@ -1,0 +1,9 @@
+<?php
+
+function resistor_preprocess_page(&$variables) {
+	$request = \Drupal::request();
+	$route_match = \Drupal::routeMatch();
+	$title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+	$variables['page_header_class'] = 'page-' . strtolower($title);
+}

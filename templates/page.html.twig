@@ -75,7 +75,7 @@
 #}
 
 <div id="page-wrapper" class="clearfix">
-    <div id="page" class="clearfix {{ region_classes }}">
+    <div id="page" class="clearfix">
     {% if page.navigation %}
         <div id="navigation-outer-wrapper" class="outer-wrapper clearfix">
             <div id="navigation-wrapper" class="inner-wrapper clearfix">
@@ -85,7 +85,7 @@
     {% endif %}
 
 
-        <header id="header-outer-wrapper" class="outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}" role="banner">
+        <header id="header-outer-wrapper" class="outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }} {{ page_header_class }}" role="banner">
             <div id="header-layout" class=" inner-wrapper clearfix">
                 {{ page.header }}
             </div>
