@@ -3764,7 +3764,7 @@ header.page-about {
       background-position: -610px 0px; } }
 
 /* line 1, ../sass/components/_blog.scss */
-.path-blog header {
+header.page-blog {
   background: url("images/grass.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -3775,16 +3775,16 @@ header.page-about {
   box-sizing: border-box; }
   @media (min-width: 780px) {
     /* line 1, ../sass/components/_blog.scss */
-    .path-blog header {
+    header.page-blog {
       padding-top: 200px; } }
   /* line 102, ../sass/_mixins.scss */
-  .path-blog header h1, .path-blog header h2, .path-blog header h3 {
+  header.page-blog h1, header.page-blog h2, header.page-blog h3 {
     color: #fff;
     text-shadow: 1px 1px 6px #333;
     text-align: center; }
   @media (min-width: 500px) {
     /* line 1, ../sass/components/_blog.scss */
-    .path-blog header {
+    header.page-blog {
       background-position: 0 -100px; } }
 
 /* line 10, ../sass/components/_blog.scss */
@@ -4067,7 +4067,7 @@ header {
       color: #21E972; }
 
 /* line 1, ../sass/components/_portfolio.scss */
-.path-portfolio header {
+header.page-portfolio {
   background: url("images/cottonwood.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -4078,16 +4078,16 @@ header {
   box-sizing: border-box; }
   @media (min-width: 780px) {
     /* line 1, ../sass/components/_portfolio.scss */
-    .path-portfolio header {
+    header.page-portfolio {
       padding-top: 200px; } }
   /* line 102, ../sass/_mixins.scss */
-  .path-portfolio header h1, .path-portfolio header h2, .path-portfolio header h3 {
+  header.page-portfolio h1, header.page-portfolio h2, header.page-portfolio h3 {
     color: #fff;
     text-shadow: 1px 1px 6px #333;
     text-align: center; }
   @media (min-width: 500px) {
     /* line 1, ../sass/components/_portfolio.scss */
-    .path-portfolio header {
+    header.page-portfolio {
       background-position: 0 -60px; } }
 
 /* line 10, ../sass/components/_portfolio.scss */
