@@ -2,12 +2,18 @@
 	background: $footer-background;
 	color: #fff;
 	margin-top: 50px;
+
+	.inner-wrapper {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .region--footer {
 	h1,h2,h3,h4,h5,h6,
 	a {
 		color: #fff;
+		text-decoration: underline;
 	}
 }
 
@@ -29,10 +35,26 @@
 		}
 	}
 
-	#github-icon {
+	#github-icon, 
+	#github-icon:after,
+	#github-icon:before {
 		@extend .hb-github-inv;
-		&:hover {
-			color: #fff;
+		border-color: #fff;
+		background: #373a3c;
+		color: #fff;
+
+		&:hover,
+		a:hover {
+			border-color: #fff;
+			background: #fff;
+			color: #373a3c;
+
+			&:after,
+			&:before {
+				border-color: #fff;
+				background: #fff;
+				color: #373a3c;
+			}
 		}
 	}
 

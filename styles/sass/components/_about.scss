@@ -1,8 +1,4 @@
 header.page-about {
 	background: url('images/grand-teton.jpg');
 	@include hero;
-
-	@include breakpoint($tablet) {
-		background-position: -610px 0px;
-	}
 }
