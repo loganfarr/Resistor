@@ -95,7 +95,7 @@
 	min-height: 500px;
 	@include box-sizing(border-box);
 
-	@include breakpoint($tablet) {
+	@include breakpoint($mobile) {
 		padding-top: 200px;
 	}
 

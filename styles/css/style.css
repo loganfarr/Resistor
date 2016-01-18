@@ -3758,7 +3758,7 @@ header.page-about {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  @media (min-width: 780px) {
+  @media (min-width: 500px) {
     /* line 1, ../sass/components/_about.scss */
     header.page-about {
       padding-top: 200px; } }
@@ -3778,7 +3778,7 @@ header.page-blog {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  @media (min-width: 780px) {
+  @media (min-width: 500px) {
     /* line 1, ../sass/components/_blog.scss */
     header.page-blog {
       padding-top: 200px; } }
@@ -3976,6 +3976,7 @@ header.page-blog {
 /* line 1, ../sass/components/_header.scss */
 header {
   background: url("images/header-bg.png");
+  padding-top: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -3985,7 +3986,7 @@ header {
   box-sizing: border-box;
   background-repeat: repeat;
   background-size: initial; }
-  @media (min-width: 780px) {
+  @media (min-width: 500px) {
     /* line 1, ../sass/components/_header.scss */
     header {
       padding-top: 200px; } }
@@ -3994,22 +3995,22 @@ header {
     color: #fff;
     text-shadow: 1px 1px 6px #333;
     text-align: center; }
-  /* line 7, ../sass/components/_header.scss */
+  /* line 8, ../sass/components/_header.scss */
   header nav {
     text-align: center;
     margin-bottom: 100px; }
-    /* line 11, ../sass/components/_header.scss */
+    /* line 12, ../sass/components/_header.scss */
     header nav ul {
       padding-left: 0; }
-      /* line 14, ../sass/components/_header.scss */
+      /* line 15, ../sass/components/_header.scss */
       header nav ul li {
         text-align: center;
         list-style-type: none; }
         @media (min-width: 780px) {
-          /* line 14, ../sass/components/_header.scss */
+          /* line 15, ../sass/components/_header.scss */
           header nav ul li {
             display: inline-block; } }
-        /* line 21, ../sass/components/_header.scss */
+        /* line 22, ../sass/components/_header.scss */
         header nav ul li a {
           padding: 10px 30px;
           display: block;
@@ -4020,23 +4021,23 @@ header {
           color: #fff;
           border-bottom: 1px solid #fff;
           text-shadow: 1px 1px 2px #333; }
-          /* line 29, ../sass/components/_header.scss */
+          /* line 30, ../sass/components/_header.scss */
           header nav ul li a:hover, header nav ul li a:active {
             color: #29abe2;
             background: #fff;
             text-shadow: none; }
-  /* line 40, ../sass/components/_header.scss */
+  /* line 41, ../sass/components/_header.scss */
   header .page-title {
     margin-top: 0; }
-  /* line 44, ../sass/components/_header.scss */
+  /* line 45, ../sass/components/_header.scss */
   header #responsive-menu-container {
     padding: 10px 30px;
     display: none; }
-    /* line 51, ../sass/components/_header.scss */
+    /* line 52, ../sass/components/_header.scss */
     header #responsive-menu-container .fa-bars {
       float: right; }
 
-/* line 57, ../sass/components/_header.scss */
+/* line 58, ../sass/components/_header.scss */
 .node--type-portfolio header {
   background-image: none; }
 
@@ -4054,32 +4055,29 @@ header {
 
 /* line 2, ../sass/components/_navigation.scss */
 #navigation-outer-wrapper {
-  width: 100%; }
-  @media (min-width: 780px) {
-    /* line 2, ../sass/components/_navigation.scss */
-    #navigation-outer-wrapper {
-      position: absolute; } }
+  width: 100%;
+  position: absolute; }
 
-/* line 10, ../sass/components/_navigation.scss */
+/* line 7, ../sass/components/_navigation.scss */
 .region--navigation nav {
   text-align: center;
   margin-bottom: 100px; }
-  /* line 14, ../sass/components/_navigation.scss */
+  /* line 11, ../sass/components/_navigation.scss */
   .region--navigation nav ul {
     padding-left: 0;
     text-align: center;
     margin: 0; }
-    /* line 19, ../sass/components/_navigation.scss */
+    /* line 16, ../sass/components/_navigation.scss */
     .region--navigation nav ul li {
       text-align: center;
       list-style-type: none;
       padding-top: 0; }
       @media (min-width: 500px) {
-        /* line 19, ../sass/components/_navigation.scss */
+        /* line 16, ../sass/components/_navigation.scss */
         .region--navigation nav ul li {
           display: inline-block;
           padding-top: 5px; } }
-      /* line 28, ../sass/components/_navigation.scss */
+      /* line 25, ../sass/components/_navigation.scss */
       .region--navigation nav ul li a {
         padding: 10px 30px;
         display: block;
@@ -4090,32 +4088,32 @@ header {
         color: #fff;
         border-bottom: 1px solid #fff;
         text-shadow: 1px 1px 2px #333; }
-        /* line 36, ../sass/components/_navigation.scss */
+        /* line 33, ../sass/components/_navigation.scss */
         .region--navigation nav ul li a:hover, .region--navigation nav ul li a:active {
           color: #29abe2;
           background: #fff;
           text-shadow: none; }
-        /* line 43, ../sass/components/_navigation.scss */
+        /* line 40, ../sass/components/_navigation.scss */
         .region--navigation nav ul li a.is-active {
           color: #fff; }
-          /* line 46, ../sass/components/_navigation.scss */
+          /* line 43, ../sass/components/_navigation.scss */
           .region--navigation nav ul li a.is-active:hover {
             color: #29abe2; }
 
-/* line 56, ../sass/components/_navigation.scss */
+/* line 53, ../sass/components/_navigation.scss */
 .region--footer nav ul {
   margin: 0; }
-  /* line 59, ../sass/components/_navigation.scss */
+  /* line 56, ../sass/components/_navigation.scss */
   .region--footer nav ul li {
     list-style-type: none; }
-    /* line 62, ../sass/components/_navigation.scss */
+    /* line 59, ../sass/components/_navigation.scss */
     .region--footer nav ul li:hover {
       background: transparent; }
-  /* line 67, ../sass/components/_navigation.scss */
+  /* line 64, ../sass/components/_navigation.scss */
   .region--footer nav ul li a {
     display: inline-block;
     padding: 15px 30px; }
-    /* line 71, ../sass/components/_navigation.scss */
+    /* line 68, ../sass/components/_navigation.scss */
     .region--footer nav ul li a:hover {
       color: #21E972; }
 
@@ -4130,7 +4128,7 @@ header.page-portfolio {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-size: initial; }
-  @media (min-width: 780px) {
+  @media (min-width: 500px) {
     /* line 1, ../sass/components/_portfolio.scss */
     header.page-portfolio {
       padding-top: 200px; } }

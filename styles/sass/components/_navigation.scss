@@ -1,10 +1,7 @@
 //Default menu styling
 #navigation-outer-wrapper {
 	width: 100%;
-	
-	@include breakpoint($tablet) {
-		position: absolute;
-	}
+	position: absolute;
 }
 
 .region--navigation nav {
