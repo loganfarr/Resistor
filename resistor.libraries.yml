@@ -10,7 +10,14 @@ global-styling:
     js:
         #header: true #JS files are now defaulted to loading in the footer. Loading in the header is opt-in
         js/script.js: {}
-    dependencies: 
+    # dependencies: 
+    #     - core/jquery
+
+portfolio:
+    version: 1.x
+    js:
+        js/portfolio.js: {}
+    dependencies:
         - core/jquery
 
 #To attach a library to a TWIG template:
