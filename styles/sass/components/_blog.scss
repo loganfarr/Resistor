@@ -31,7 +31,7 @@ header.page-blog {
 			@include center-element;
 			margin-bottom: 50px;
 
-			@include breakpoint($mobile) {
+			@include breakpoint($tablet) {
 				display: inline-block;
 				float: left;
 				margin-left: 0px;
@@ -52,7 +52,7 @@ header.page-blog {
 			display: inline-block;
 			float: right;
 			width: 100%;
-			@include breakpoint($mobile) {
+			@include breakpoint($tablet) {
 				width: 70%;
 			}
 

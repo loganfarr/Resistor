@@ -19,7 +19,11 @@
 
 //see ../base/_hexagons.scss for class information
 .social-media-links {
-	float: right;
+	text-align: center;	
+
+	@include breakpoint($tablet) {	
+		float: right;
+	}
 
 	.social-media-link { //NOT plural
 		@extend .hb;
