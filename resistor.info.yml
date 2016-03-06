@@ -9,6 +9,7 @@ base theme: omega
 #This will call the library globally instead of just whenever a page declares it
 libraries:
     - resistor/global-styling
+    - resistor/google-code-prettify
 
 #Regions
 regions:
