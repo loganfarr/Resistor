@@ -1042,29 +1042,21 @@ small, sup, sub {
   font-size: 70%; }
 
 /* line 74, ../sass/base/_html.scss */
-sub {
-  vertical-align: text-bottom; }
-
-/* line 78, ../sass/base/_html.scss */
-sup {
-  vertical-align: text-top; }
-
-/* line 82, ../sass/base/_html.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 87, ../sass/base/_html.scss */
+/* line 79, ../sass/base/_html.scss */
 a {
   color: #29abe2;
   text-decoration: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
-  /* line 92, ../sass/base/_html.scss */
+  /* line 84, ../sass/base/_html.scss */
   a:hover {
     color: #21E972;
     text-decoration: none; }
-  /* line 97, ../sass/base/_html.scss */
+  /* line 89, ../sass/base/_html.scss */
   a.button {
     background-color: #3A52E6;
     color: #fff;
@@ -1082,14 +1074,14 @@ a {
       color: #fff;
       border-radius: 0; }
 
-/* line 102, ../sass/base/_html.scss */
+/* line 94, ../sass/base/_html.scss */
 input,
 textarea {
   padding: 10px;
   margin: 10px 0;
   max-width: 100%; }
 
-/* line 109, ../sass/base/_html.scss */
+/* line 101, ../sass/base/_html.scss */
 input[type="submit"] {
   border: 0;
   background-image: none;
@@ -1110,27 +1102,27 @@ input[type="submit"] {
     color: #fff;
     border-radius: 0; }
 
-/* line 116, ../sass/base/_html.scss */
+/* line 108, ../sass/base/_html.scss */
 select {
   padding: 5px;
   margin: 5px;
   border: 1px solid rgba(169, 169, 169, 0.5); }
 
-/* line 122, ../sass/base/_html.scss */
+/* line 114, ../sass/base/_html.scss */
 ul {
   padding-left: 1em; }
-  /* line 125, ../sass/base/_html.scss */
+  /* line 117, ../sass/base/_html.scss */
   ul li {
     list-style-type: circle; }
 
-/* line 130, ../sass/base/_html.scss */
+/* line 122, ../sass/base/_html.scss */
 blockquote {
   padding: 0 1.5em;
   margin: 0 1.5em;
   border-left: 5px solid #3A52E6;
   font-style: italic; }
 
-/* line 137, ../sass/base/_html.scss */
+/* line 129, ../sass/base/_html.scss */
 code, pre {
   font-family: monospace;
   display: block;
@@ -1139,33 +1131,33 @@ code, pre {
   padding: 15px;
   white-space: normal; }
 
-/* line 146, ../sass/base/_html.scss */
+/* line 138, ../sass/base/_html.scss */
 footer {
   padding: 20px; }
   @media (min-width: 1000px) {
-    /* line 146, ../sass/base/_html.scss */
+    /* line 138, ../sass/base/_html.scss */
     footer {
       padding: 0; } }
 
-/* line 155, ../sass/base/_html.scss */
+/* line 147, ../sass/base/_html.scss */
 ul {
   padding-left: 30px; }
-  /* line 158, ../sass/base/_html.scss */
+  /* line 150, ../sass/base/_html.scss */
   ul li {
     list-style-type: circle;
     margin-bottom: 5px; }
-  /* line 163, ../sass/base/_html.scss */
+  /* line 155, ../sass/base/_html.scss */
   ul.tabs, ul.links--inline, ul.vertical-tabs-list {
     padding-left: 0; }
-    /* line 168, ../sass/base/_html.scss */
+    /* line 160, ../sass/base/_html.scss */
     ul.tabs li, ul.links--inline li, ul.vertical-tabs-list li {
       list-style-type: none;
       margin-right: 10px;
       margin-bottom: 0; }
-  /* line 175, ../sass/base/_html.scss */
+  /* line 167, ../sass/base/_html.scss */
   ul.tabs--primary {
     border-bottom: 0; }
-    /* line 179, ../sass/base/_html.scss */
+    /* line 171, ../sass/base/_html.scss */
     ul.tabs--primary li a {
       background-color: 7px 15px;
       color: #fff;
@@ -1182,77 +1174,77 @@ ul {
         background-color: #21E972;
         color: #fff;
         border-radius: 0; }
-      /* line 182, ../sass/base/_html.scss */
+      /* line 174, ../sass/base/_html.scss */
       ul.tabs--primary li a.active {
         color: #fff;
         background: #21E972; }
 
-/* line 191, ../sass/base/_html.scss */
+/* line 183, ../sass/base/_html.scss */
 ul.breadcrumb {
   clear: both;
   overflow: auto;
   display: none; }
-  /* line 195, ../sass/base/_html.scss */
+  /* line 187, ../sass/base/_html.scss */
   ul.breadcrumb li {
     list-style-type: none;
     float: left;
     margin-right: 5px; }
-    /* line 200, ../sass/base/_html.scss */
+    /* line 192, ../sass/base/_html.scss */
     ul.breadcrumb li:after {
       content: ' »'; }
-    /* line 204, ../sass/base/_html.scss */
+    /* line 196, ../sass/base/_html.scss */
     ul.breadcrumb li:last-child:after {
       content: ''; }
 
-/* line 210, ../sass/base/_html.scss */
+/* line 202, ../sass/base/_html.scss */
 ol {
   padding-left: 30px; }
-  /* line 213, ../sass/base/_html.scss */
+  /* line 205, ../sass/base/_html.scss */
   ol li {
     list-style-type: decimal;
     margin-bottom: 5px; }
 
-/* line 220, ../sass/base/_html.scss */
+/* line 212, ../sass/base/_html.scss */
 dl dt {
   margin-top: 20px;
   margin-bottom: 5px; }
-/* line 225, ../sass/base/_html.scss */
+/* line 217, ../sass/base/_html.scss */
 dl dd {
   text-indent: 1em; }
 
-/* line 232, ../sass/base/_html.scss */
+/* line 224, ../sass/base/_html.scss */
 table {
   width: 100%; }
-  /* line 235, ../sass/base/_html.scss */
+  /* line 227, ../sass/base/_html.scss */
   table caption {
     margin: 10px 0;
     text-align: center;
     font-style: italic;
     padding: 10px 0; }
-  /* line 242, ../sass/base/_html.scss */
+  /* line 234, ../sass/base/_html.scss */
   table thead {
     background: transparent; }
-  /* line 246, ../sass/base/_html.scss */
+  /* line 238, ../sass/base/_html.scss */
   table tr:nth-child(odd), table tr.odd {
     background: transparent; }
-  /* line 250, ../sass/base/_html.scss */
+  /* line 242, ../sass/base/_html.scss */
   table tr:nth-child(even), table tr.even {
     background: #e5e5e5; }
-  /* line 254, ../sass/base/_html.scss */
+  /* line 246, ../sass/base/_html.scss */
   table td, table th {
     padding: 7px;
     vertical-align: middle; }
 
-/* line 261, ../sass/base/_html.scss */
+/* line 253, ../sass/base/_html.scss */
 fieldset {
   margin-bottom: 15px;
   border: 1px solid #3A52E6; }
-  /* line 265, ../sass/base/_html.scss */
+  /* line 257, ../sass/base/_html.scss */
   fieldset legend {
     background: #fff;
     position: relative;
     top: -5px; }
-  /* line 271, ../sass/base/_html.scss */
+  /* line 263, ../sass/base/_html.scss */
   fieldset div.fieldset-wrapper {
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -1261,15 +1253,15 @@ fieldset {
     -ms-box-sizing: border-box;
     box-sizing: border-box; }
 
-/* line 279, ../sass/base/_html.scss */
+/* line 271, ../sass/base/_html.scss */
 .messages.status {
   background-color: #dff0d8;
   border-color: #a3d48e; }
-/* line 284, ../sass/base/_html.scss */
+/* line 276, ../sass/base/_html.scss */
 .messages.warning {
   background-color: #fcf8e3;
   border-color: #f2e187; }
-/* line 289, ../sass/base/_html.scss */
+/* line 281, ../sass/base/_html.scss */
 .messages.error {
   background-color: #f2dede;
   border-color: #d59595; }
