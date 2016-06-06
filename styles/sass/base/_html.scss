@@ -6,284 +6,284 @@
   * To modify structural styles. see base/_layout.scss
 **/
 * {
-	@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 
 body {
-	font-family: $font-family;
-	color: $font-color;
-	margin: 0;
-	line-height: 22px;
+  font-family: $font-family;
+  color: $font-color;
+  margin: 0;
+  line-height: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $heading-color;
-	font-family: $heading-font;
-	line-height: initial;
-	font-weight: lighter;
+  color: $heading-color;
+  font-family: $heading-font;
+  line-height: initial;
+  font-weight: lighter;
 }
 
 h1 {
-	font-size: 3.5em;
-	margin: 0.5em 0;
+  font-size: 3.5em;
+  margin: 0.5em 0;
 }
 
 h2 {
-	font-size: 2.5em;
-	margin: 0.4em 0;
+  font-size: 2.5em;
+  margin: 0.4em 0;
 }
 
 h3 {
-	font-size: 2em;
-	margin: 0.3em 0;
-	line-height: 1.2em;
+  font-size: 2em;
+  margin: 0.3em 0;
+  line-height: 1.2em;
 }
 
 h4 {
-	font-size: 1.75em;
-	margin: 0.2em 0;
+  font-size: 1.75em;
+  margin: 0.2em 0;
 }
 
 h5 {
-	font-size: 1.3em;
-	margin: 0.1em 0;
+  font-size: 1.3em;
+  margin: 0.1em 0;
 }
 
 h6 {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 p {
-	margin: 10px;
+  margin: 10px;
 }
 
 em, i, q {
-	font-style: italic;
+  font-style: italic;
 }
 
 b, strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 small, sup, sub {
-	font-size: 70%;
+  font-size: 70%;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-	color: $link-color;
-	text-decoration: none;
-	@include transition(all, 0.2s);
+  color: $link-color;
+  text-decoration: none;
+  @include transition(all, 0.2s);
 
-	&:hover {
-		color: $link-hover-color;
-		text-decoration: none;
-	}
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
 
-	&.button {
-		@include button();
-	}
+  &.button {
+    @include button();
+  }
 }
 
 input,
 textarea {
-	padding: 10px;
-	margin: 10px 0;
-	max-width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 100%;
 }
 
 input[type="submit"] {
-	border: 0; 
-	background-image: none;
-	font-family: $font-family;
-	@include button($secondary, $action);
+  border: 0; 
+  background-image: none;
+  font-family: $font-family;
+  @include button($secondary, $action);
 }
 
 select {
-	padding: 5px;
-	margin: 5px;
-	border: 1px solid rgba(169, 169, 169, 0.5);
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(169, 169, 169, 0.5);
 }
 
 ul {
-	padding-left: 1em;
+  padding-left: 1em;
 
-	li {
-		list-style-type: circle;
-	}
+  li {
+    list-style-type: circle;
+  }
 }
 
 blockquote {
-	padding: 0 1.5em;
-	margin: 0 1.5em;
-	border-left: 5px solid $tertiary;
-	font-style: italic;
+  padding: 0 1.5em;
+  margin: 0 1.5em;
+  border-left: 5px solid $tertiary;
+  font-style: italic;
 }
 
 pre,
 .node__content pre.prettyprint,
 pre.prettyprint,
 pre.prettyprint.prettyprinted {
-	padding: 10px;
-	border: 1px solid #ddd;
-	font-family: monospace;
-	display: block;
-	background: #e5e5e5;
-	border-radius: 3px;
-	padding: 15px;
-	white-space: normal;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-family: monospace;
+  display: block;
+  background: #e5e5e5;
+  border-radius: 3px;
+  padding: 15px;
+  white-space: normal;
 }
 
 footer {
-	padding: 20px;
+  padding: 20px;
 
-	@include breakpoint($desktop) {
-		padding: 0;
-	}
+  @include breakpoint($desktop) {
+    padding: 0;
+  }
 }
 
 //Lists
 ul {
-	padding-left: 30px;
-	
-	li {
-		list-style-type: circle;
-		margin-bottom: 5px;
-	}
+  padding-left: 30px;
+  
+  li {
+    list-style-type: circle;
+    margin-bottom: 5px;
+  }
 
-	&.tabs,
-	&.links--inline,
-	&.vertical-tabs-list {
-		padding-left: 0;
-		
-		li {
-			list-style-type: none;
-			margin-right: 10px;
-			margin-bottom: 0;
-		}
-	}
+  &.tabs,
+  &.links--inline,
+  &.vertical-tabs-list {
+    padding-left: 0;
+    
+    li {
+      list-style-type: none;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
 
-	&.tabs--primary {
-		border-bottom: 0;
+  &.tabs--primary {
+    border-bottom: 0;
 
-		li {
-			a {
-				@include button(7px 15px);
+    li {
+      a {
+        @include button(7px 15px);
 
-				&.active {
-					color: $button-hover-text;
-					background: $button-hover-background;
-				}
-			}
-		}
-	}
+        &.active {
+          color: $button-hover-text;
+          background: $button-hover-background;
+        }
+      }
+    }
+  }
 }
 
 ul.breadcrumb {
-	@include clearfix;
-	display: none;
+  @include clearfix;
+  display: none;
 
-	li {
-		list-style-type: none;
-		float: left;
-		margin-right: 5px;
+  li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
 
-		&:after {
-			content: ' »';
-		}
+    &:after {
+      content: ' »';
+    }
 
-		&:last-child:after {
-			content: '';
-		}
-	}
+    &:last-child:after {
+      content: '';
+    }
+  }
 }
 
 ol {
-	padding-left: 30px;
-	
-	li {
-		list-style-type: decimal; 
-		margin-bottom: 5px;
-	}
+  padding-left: 30px;
+  
+  li {
+    list-style-type: decimal; 
+    margin-bottom: 5px;
+  }
 }
 
 dl {
-	dt {
-		margin-top: 20px;
-		margin-bottom: 5px;
-	}
+  dt {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 
-	dd {
-		text-indent: 1em;
-	}
+  dd {
+    text-indent: 1em;
+  }
 }
 
 
 //Tables
 table {
-	width: 100%;
+  width: 100%;
 
-	caption {
-		margin: 10px 0;
-		text-align: center;
-		font-style: italic;
-		padding: 10px 0;
-	}
+  caption {
+    margin: 10px 0;
+    text-align: center;
+    font-style: italic;
+    padding: 10px 0;
+  }
 
-	thead {
-		background: $table-heading-background;
-	}
-	
-	tr:nth-child(odd), tr.odd {
-		background: $table-odd-row-background;
-	}
-	
-	tr:nth-child(even), tr.even {
-		background: $table-even-row-background;
-	}
-	
-	td, th {
-		padding: 7px;
-		vertical-align: middle;
-	}
+  thead {
+    background: $table-heading-background;
+  }
+  
+  tr:nth-child(odd), tr.odd {
+    background: $table-odd-row-background;
+  }
+  
+  tr:nth-child(even), tr.even {
+    background: $table-even-row-background;
+  }
+  
+  td, th {
+    padding: 7px;
+    vertical-align: middle;
+  }
 }
 
 //Fieldset
 fieldset {
-	margin-bottom: 15px;
-	border: 1px solid $global-border-color;
-	
-	legend {
-		background: #fff;
-		position: relative;
-		top: -5px;
-	}
-	
-	div.fieldset-wrapper {
-		padding: 20px;
-		@include box-sizing(border-box);
-	}
+  margin-bottom: 15px;
+  border: 1px solid $global-border-color;
+  
+  legend {
+    background: #fff;
+    position: relative;
+    top: -5px;
+  }
+  
+  div.fieldset-wrapper {
+    padding: 20px;
+    @include box-sizing(border-box);
+  }
 }
 
 //Message box styles
 .messages {
-	&.status {
-		background-color: $status-bg;
-		border-color: $status-border;
-	}
-	
-	&.warning {
-		background-color: $warning-bg;
-		border-color: $warning-border;
-	}
-	
-	&.error {
-		background-color: $error-bg;
-		border-color: $error-border;
-	}
+  &.status {
+    background-color: $status-bg;
+    border-color: $status-border;
+  }
+  
+  &.warning {
+    background-color: $warning-bg;
+    border-color: $warning-border;
+  }
+  
+  &.error {
+    background-color: $error-bg;
+    border-color: $error-border;
+  }
 }

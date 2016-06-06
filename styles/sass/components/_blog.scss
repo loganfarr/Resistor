@@ -1,114 +1,114 @@
 header.page-blog {
-	background: url('images/grass.jpg');
-	@include hero;
+  background: url('images/grass.jpg');
+  @include hero;
 
-	@include breakpoint($mobile) {
-		background-position: 0 -100px;
-	}
+  @include breakpoint($mobile) {
+    background-position: 0 -100px;
+  }
 }
 
 .blog-view {
-	clear: both;
-	padding-bottom: 100px;
+  clear: both;
+  padding-bottom: 100px;
 
-	&.blog-block {
-		margin-top: -50px;
-	}
+  &.blog-block {
+    margin-top: -50px;
+  }
 
-	.views-row {
-		clear: both;
-		padding-top: 50px;
-		border-top: 1px solid $smoke;
-		margin-top: 50px;
-		position: relative;
-		@include clearfix;
+  .views-row {
+    clear: both;
+    padding-top: 50px;
+    border-top: 1px solid $smoke;
+    margin-top: 50px;
+    position: relative;
+    @include clearfix;
 
-		&:first-child {
-			border-top: none;
-		}
+    &:first-child {
+      border-top: none;
+    }
 
-		.views-field-field-image {
-			@include center-element;
-			margin-bottom: 50px;
+    .views-field-field-image {
+      @include center-element;
+      margin-bottom: 50px;
 
-			@include breakpoint($tablet) {
-				display: inline-block;
-				float: left;
-				margin-left: 0px;
-				margin-right: 50px;	
-				margin-bottom: 0;
-			}
+      @include breakpoint($tablet) {
+        display: inline-block;
+        float: left;
+        margin-left: 0px;
+        margin-right: 50px;  
+        margin-bottom: 0;
+      }
 
-			img {
-				@include center-element;
-				@include circle;
-				border: 1px solid #ccc;
-				border-radius: 110px;
-				padding: 10px;
-			}
-		}
+      img {
+        @include center-element;
+        @include circle;
+        border: 1px solid #ccc;
+        border-radius: 110px;
+        padding: 10px;
+      }
+    }
 
-		.views-field-nothing {
-			display: inline-block;
-			float: right;
-			width: 100%;
-			@include breakpoint($tablet) {
-				width: 70%;
-			}
+    .views-field-nothing {
+      display: inline-block;
+      float: right;
+      width: 100%;
+      @include breakpoint($tablet) {
+        width: 70%;
+      }
 
-			@include breakpoint($desktop) {
-				width: 73%;
-			}
+      @include breakpoint($desktop) {
+        width: 73%;
+      }
 
-			p {
-				margin-left: 0;
-			}
-		}
+      p {
+        margin-left: 0;
+      }
+    }
 
-		.views-field-title {
-			margin-bottom: 1em;
-		}
+    .views-field-title {
+      margin-bottom: 1em;
+    }
 
-		.views-field-created {
-			font-style: italic;
-		}
+    .views-field-created {
+      font-style: italic;
+    }
 
-		.post-body {}
+    .post-body {}
 
-		.views-field-view-node {
-			cursor: pointer;
-			position: absolute;
-			bottom: 0;
-			right: 30px;
-		}
-	}
+    .views-field-view-node {
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+    }
+  }
 
-	.view-footer {
-		text-align: center;
-	}
+  .view-footer {
+    text-align: center;
+  }
 
-	a.see-all-posts {
-		@include button;
-	}
+  a.see-all-posts {
+    @include button;
+  }
 
-	#single-post {
-		div.article-image img {
-			@include circle;
-		}
-	}
+  #single-post {
+    div.article-image img {
+      @include circle;
+    }
+  }
 }
 
 .node--type-article .field--name-field-image {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 
-	@include breakpoint($tablet) {
-		float: left;
-		margin-right: 30px;
-		margin-bottom: 30px;
-		margin-left: 0;
-	}
-	
+  @include breakpoint($tablet) {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  
 }
