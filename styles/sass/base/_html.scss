@@ -12,7 +12,6 @@
 
 body {
 	font-family: $font-family;
-	font-weight: lighter;
 	color: $font-color;
 	margin: 0;
 	line-height: 22px;
@@ -126,7 +125,12 @@ blockquote {
 	font-style: italic;
 }
 
-code, pre {
+pre,
+.node__content pre.prettyprint,
+pre.prettyprint,
+pre.prettyprint.prettyprinted {
+	padding: 10px;
+	border: 1px solid #ddd;
 	font-family: monospace;
 	display: block;
 	background: #e5e5e5;

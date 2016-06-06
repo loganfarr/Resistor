@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin box-sizing($value: border-box) {
 	-webkit-box-sizing: $value;
 	-moz-box-sizing: $value;
@@ -17,7 +19,7 @@
 	margin-left: auto;
 }
 
-@mixin button($background: $button-background, $background-hover: $button-hover-background, $text: #fff, $text-hover: $button-hover-text) {
+@mixin button($background: #2ecc71, $background-hover: #24b662, $text: #fff, $text-hover: #fff) {
 	background-color: $background;
 	color: $text;
 	padding: $button-padding;

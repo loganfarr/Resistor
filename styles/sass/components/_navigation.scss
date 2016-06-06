@@ -1,73 +1,85 @@
 //Default menu styling
 #navigation-outer-wrapper {
-	width: 100%;
-	position: absolute;
+  width: 100%;
+  position: absolute;
 }
 
-.region--navigation nav {
-	text-align: center;
-	margin-bottom: 100px;
+#navigation-wrapper {
+  padding-right: 0;
+  padding-left: 0;
 
-	ul {
-		padding-left: 0;
-		text-align: center;
-		margin: 0;
+  @include breakpoint($tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
-		li {
-			text-align: center; 
-			list-style-type: none;			
-			padding-top: 0;
-			@include breakpoint($mobile) {
-				display: inline-block;
-				padding-top: 5px;
-			}
+.region-navigation nav {
+  text-align: center;
+  margin-bottom: 100px;
 
-			a {
-				padding: 10px 30px;
-				display: block;
-				@include transition(all, 0.2s);
-				color: $menu-text-color;
-				border-bottom: 1px solid #fff;
-				text-shadow: 1px 1px 2px $black;
+  ul {
+    padding-left: 0;
+    text-align: center;
+    margin: 0;
 
-				&:hover,
-				&:active {
-					color: $menu-text-hover-color;
-					background: $menu-item-hover-background;
-					text-shadow: none;
-				}
+    li {
+      text-align: center; 
+      list-style-type: none;      
+      padding-top: 0;
+      display: block;
 
-				&.is-active {
-					color: $menu-text-color;
+      @include breakpoint($tablet) {
+        display: inline-block;
+        padding-top: 5px;
+      }
 
-					&:hover {
-						color: $menu-text-hover-color;
-					}
-				}
-			}
-		}
-	}
+      a {
+        padding: 10px 30px;
+        display: block;
+        @include transition(all, 0.2s);
+        color: $menu-text-color;
+        border-bottom: 1px solid #fff;
+        text-shadow: 1px 1px 2px $black;
+
+        &:hover,
+        &:active {
+          color: $menu-text-hover-color;
+          background: $menu-item-hover-background;
+          text-shadow: none;
+        }
+
+        &.is-active {
+          color: $menu-text-color;
+
+          &:hover {
+            color: $menu-text-hover-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .region--footer nav {
-	ul {
-		margin: 0;
+  ul {
+    margin: 0;
 
-		li {
-			list-style-type: none;
-			
-			&:hover {
-				background: transparent;
-			}
-		}
+    li {
+      list-style-type: none;
+      
+      &:hover {
+        background: transparent;
+      }
+    }
 
-		li a {
-			display: inline-block;
-			padding: $menu-item-padding;
+    li a {
+      display: inline-block;
+      padding: $menu-item-padding;
 
-			&:hover {
-				color: $main;
-			}
-		}
-	}
+      &:hover {
+        color: $main;
+      }
+    }
+  }
 }
