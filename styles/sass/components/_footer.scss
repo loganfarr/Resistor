@@ -1,78 +1,129 @@
 #footer-outer-wrapper {
-	background: $footer-background;
-	color: #fff;
-	margin-top: 50px;
+  background: $footer-background;
+  color: #fff;
+  margin-top: 50px;
 
-	.inner-wrapper {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
+  .inner-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .region--footer {
-	h1,h2,h3,h4,h5,h6,
-	a {
-		color: #fff;
-		text-decoration: underline;
-	}
+  h1,h2,h3,h4,h5,h6,
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 //see ../base/_hexagons.scss for class information
 .social-media-links {
-	text-align: center;	
+  text-align: center;  
 
-	@include breakpoint($tablet) {	
-		float: right;
-	}
+  @include breakpoint($tablet) {  
+    float: right;
+  }
 
-	.social-media-link { //NOT plural
-		@extend .hb;
-		@extend .hb-xs;
-	}
+  .social-media-link { //NOT plural
+    @extend .hb;
+    @extend .hb-xs;
+  }
 
-	#twitter-icon {
-		@extend .hb-twitter-inv;
-		color: $twitter;
+  #twitter-icon {
+    // @extend .hb-twitter-inv;
+    color: $twitter;
+    background: transparent;
 
-		&:hover {
-			color: #fff;
-		}
-	}
+    &:before,
+    &:after {
+      color: $twitter;
+      background: transparent;
+    }
 
-	#github-icon, 
-	#github-icon:after,
-	#github-icon:before {
-		@extend .hb-github-inv;
-		border-color: #fff;
-		background: #373a3c;
-		color: #fff;
+    &:hover {
+      &:after,
+      &:before {
+        border-color: #55ACEE;
+      }
+    }
+  }
 
-		&:hover,
-		a:hover {
-			border-color: #fff;
-			background: #fff;
-			color: #373a3c;
+  #github-icon {
+    background:transparent;
+    color: #fff;
 
-			&:after,
-			&:before {
-				border-color: #fff;
-				background: #fff;
-				color: #373a3c;
-			}
-		}
-	}
+    &:before,
+    &:after {
+      background:transparent;
+      color: #fff;
+    }
 
-	#google-plus-icon {
-		@extend .hb-google-plus-inv;
-		color: $googlePlus;
-	}
+    &:hover {
+      background:transparent;
+  	  border-color: #fff;
+  	  color: #fff;
 
-	#linkedIn-icon {
-		@extend .hb-linkedin-inv;
-		color: $linkedIn;
+      &:after,
+      &:before {
+        background: transparent;
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+  }
 
-		&:hover {
-			color: #fff;
-		}
-	}
+  #google-plus-icon {
+    // @extend .hb-google-plus-inv;
+    color: $googlePlus;
+
+    background:transparent;
+    color: #db514f;
+
+    &:before,
+    &:after {
+      background:transparent;
+      color: #db514f;
+    }
+
+    &:hover {
+      background: transparent;
+      border-color: #db514f;
+      color: #db514f;
+
+      &:before,
+      &:after {
+        background: transparent;
+        border-color: #db514f;
+        color: #db514f;
+      }
+    }
+  }
+
+  #linkedIn-icon {
+    // @extend .hb-linkedin-inv;
+    color: $linkedIn;
+    background:transparent;
+    border-color: #0077b5;
+
+    &:before,
+    &:after {
+      color: $linkedIn;
+      background:transparent;
+      border-color: #0077b5;
+    }
+    
+    &:hover {
+      color: #fff;
+      background: transparent;
+      border-color: #0077b5;
+
+      &:before,
+      &:after {
+        color: #fff;
+        background: transparent;
+        border-color: #0077b5;
+      }
+    }
+  }
 }
